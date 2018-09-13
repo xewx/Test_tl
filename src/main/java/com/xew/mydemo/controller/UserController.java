@@ -4,9 +4,7 @@ import com.xew.mydemo.model.User;
 import com.xew.mydemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -26,12 +24,27 @@ public class UserController {
 
     @GetMapping("/getAll")
     public List<User> getAll(){
-        return userService.getAllUser();
+        return userService.findAllUser();
     }
 
     @GetMapping("/search")
     public User getOne(Long id){
         return userService.getUserById(id);
+    }
+
+    @PostMapping(value = "/save")
+    public boolean save(User user){
+        return userService.saveUser(user);
+    }
+
+    @PutMapping(value = "/update")
+    public boolean update(User u){
+        return userService.saveUser(u);
+    }
+
+    @GetMapping(value = "/delete")
+    public boolean delete(Long id){
+        return userService.deleteUser(id);
     }
 
 //    @GetMapping("/a")

@@ -27,17 +27,44 @@ $(function () {
     })
 });
 
+function updateUser(uid) {
+}
+
+function deleteUser(uid) {
+    if(confirm("Delete this Info?")) {
+        $.ajax({
+            url: "/xew/delete" ,
+            type: "get",
+            data: {"id":uid},
+            success: function (data) {
+                if (data) {
+                    alert("Delete Succ")
+                    location.reload()
+                } else {
+                    alert("Error")
+                    location.reload()
+                }
+            }
+        })
+    }
+}
+
+function searchUser(id){
+    var url = "/xew/search?id="+id
+    var data = $.getJSONData(url)
+    var info = ""
+    $.each(data, function (key, val) {
+        info+= key+":"+val+"  ";
+    });
+    alert(info)
+}
+
 $("#sub").click(function () {
-    $.ajax({
-        url:"/xew/search",
-        type:"get",
-        data:{"id":$("#id").val()},
-        success:function (data) {
-            var info="";
-            $.each(data,function (key, value) {
-                info+=key+":"+value+" ";
-            })
-            alert(info);
-        }
-    })
-})
+    var id = $("#id").val()
+    if(id == "" || id == null){
+        alert("please input id")
+    }else {
+        searchUser(id)
+    }
+});
+

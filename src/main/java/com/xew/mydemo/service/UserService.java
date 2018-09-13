@@ -9,7 +9,10 @@ import java.util.List;
 
 
 public interface UserService {
-    List<User> getAllUser();
+    boolean saveUser(User u);
     User getUserById(Long id);
+    boolean deleteUser(Long id);
+    List<User> findAllUser();
+    boolean updateUser(User id);
 
 }

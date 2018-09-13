@@ -34,6 +34,6 @@
     </div>
     <div id = "upd" style="float:left;width: 100%;background-color: #f0f4f7;padding: 0 3.8rem;"></div>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/asd.js"></script>
+    <script src="../js/hello.js"></script>
 </body>
 </html>
