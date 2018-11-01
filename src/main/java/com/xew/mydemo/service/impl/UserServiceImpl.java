@@ -3,6 +3,7 @@ package com.xew.mydemo.service.impl;
 import com.xew.mydemo.dao.UserRepository;
 import com.xew.mydemo.model.User;
 import com.xew.mydemo.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,8 +26,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUserById(Long id) {
-        return userRepository.findOne(id);
+    public User getUserByName(String name) {
+        if(StringUtils.isNotBlank(name)){
+            User user=userRepository.findByName(name);
+            return user;
+        }else {
+            return null;
+        }
     }
 
     @Override
@@ -42,15 +48,5 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAllUser() {
         return userRepository.findAll();
-    }
-
-    @Override
-    public boolean updateUser(User u) {
-        if(u != null){
-            userRepository.save(u);
-            return true;
-        }else {
-            return false;
-        }
     }
 }

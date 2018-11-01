@@ -16,7 +16,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 
 @SpringBootApplication
-//@MapperScan("com.xew.mydemo.dao")
 public class MydemoApplication extends SpringBootServletInitializer {
 
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

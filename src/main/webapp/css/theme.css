@@ -1,0 +1,66 @@
+.title{
+	width: 730px;
+    height:40px;
+    margin:15px;
+    padding-top: 10px;   
+	font-size: 32px;
+	line-height:50px;
+}
+.info{
+	width: 700px;
+    height:60px;
+    margin:15px;
+    padding-left:20px;
+	font-size: 10px;
+	line-height:60px;
+	background-color: #f2f2f2;
+}
+.mess{
+	width: 730px;
+    margin:15px;
+	font-size: 16px;
+	line-height:25px;
+}
+.replymain{
+	width: 730px;
+    margin:15px;
+}
+.rep1{
+	width: 730px;
+	height: 40px;
+	font-size: 10px;
+	line-height:40px;
+}
+.rep2{
+	height:20px;
+	line-height:20px;
+}
+.rep3{
+	width: 730px;
+	margin-top:20px;
+	font-size: 16px;
+	line-height:20px;
+}
+.retext{
+	width: 750px;
+	height:200px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+    border-radius:4px;
+    padding: 10px;
+}
+.repbut{
+	float:right;
+	height:30px;
+	width:60px;
+	margin-top: 10px;
+	border:1px solid black;
+    border-radius:3px;
+}
+.sendtext{
+	width: 750px;
+	height:40px;
+	font-size: 15px;
+	line-height:40px;
+	padding-left: 10px;
+}

@@ -1,41 +1,23 @@
-package com.xew.mydemo.model;
-
-import javax.persistence.*;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.List;
+package com.xew.mydemo.vo;
 
 /**
  * @author enwei xu
- * @date 2018-10-30
+ * @date 2018-10-31
  */
-@Entity
-@Table(name = "USER")
-public class User {
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class UserVO {
     private Long id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "password")
-    private String password;
-
-    @Column(name = "sex")
     private String sex;
 
-    @Column(name = "phone")
+    private String password;
+
+    private String password2;
+
     private String phone;
 
-    @Column(name = "email")
     private String email;
-
-//    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Role.class, cascade = {CascadeType.PERSIST})
-//    @JoinTable(name = "USER_ROLE", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
-//    private List<Role> userRole;
 
     public Long getId() {
         return id;
@@ -59,6 +41,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPassword2() {
+        return password2;
+    }
+
+    public void setPassword2(String password2) {
+        this.password2 = password2;
     }
 
     public String getSex() {
@@ -85,20 +75,14 @@ public class User {
         this.email = email;
     }
 
-    public static String MD5(String pw) throws NoSuchAlgorithmException {
-        byte[] oldpw=pw.getBytes();
-        MessageDigest md=MessageDigest.getInstance("MD5");
-        md.update(oldpw);
-        return new BigInteger(1, md.digest()).toString(16);
-    }
-
     @Override
     public String toString() {
-        return "User{" +
+        return "UserVO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
                 ", sex='" + sex + '\'' +
+                ", password='" + password + '\'' +
+                ", password2='" + password2 + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
