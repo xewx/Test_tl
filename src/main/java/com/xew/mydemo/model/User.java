@@ -1,9 +1,12 @@
 package com.xew.mydemo.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -32,6 +35,10 @@ public class User {
 
     @Column(name = "email")
     private String email;
+
+    @Column(name = "create_date")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createDate;
 
 //    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Role.class, cascade = {CascadeType.PERSIST})
 //    @JoinTable(name = "USER_ROLE", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
@@ -83,6 +90,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
     public static String MD5(String pw) throws NoSuchAlgorithmException {

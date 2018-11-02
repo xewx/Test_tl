@@ -22,7 +22,7 @@ public class ResultResponse implements Serializable {
 	private Map<String, Object> data = new HashMap<String, Object>();
 	
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	private Map<String, String> dat2 = new HashMap<String, String>();
+	private Map<String, String> data2 = new HashMap<String, String>();
 
 	public ResultResponse() {
 		
@@ -70,14 +70,13 @@ public class ResultResponse implements Serializable {
 	public Object getAttribute(String key){
 		return this.data.get(key);
 	}
-	
-	
-	public Map<String, String> getDat2() {
-		return dat2;
+
+	public Map<String, String> getData2() {
+		return data2;
 	}
 
-	public void setDat2(Map<String, String> dat2) {
-		this.dat2 = dat2;
+	public void setData2(Map<String, String> data2) {
+		this.data2 = data2;
 	}
 
 	@Override

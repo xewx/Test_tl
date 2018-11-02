@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -20,13 +21,13 @@ public class UserController {
     @PostMapping("/register")
     public ResultResponse register(UserVO userVO){
         ResultResponse rr=new ResultResponse(false);
-        System.out.println(userVO);
         User user = new User();
         user.setName(userVO.getName());
         user.setPassword(userVO.getPassword());
         user.setSex(userVO.getSex());
         user.setPhone(userVO.getPhone());
         user.setEmail(userVO.getEmail());
+        user.setCreateDate(new Date());
         userService.saveUser(user);
         rr.setResult(true);
         return rr;
