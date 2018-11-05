@@ -4,16 +4,19 @@ import com.xew.mydemo.model.User;
 import com.xew.mydemo.service.UserService;
 import com.xew.mydemo.util.ResultResponse;
 import com.xew.mydemo.vo.UserVO;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/xew")
+@RequestMapping(value = "/user")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -21,16 +24,34 @@ public class UserController {
     @PostMapping("/register")
     public ResultResponse register(UserVO userVO){
         ResultResponse rr=new ResultResponse(false);
-        User user = new User();
-        user.setName(userVO.getName());
-        user.setPassword(userVO.getPassword());
-        user.setSex(userVO.getSex());
-        user.setPhone(userVO.getPhone());
-        user.setEmail(userVO.getEmail());
-        user.setCreateDate(new Date());
-        userService.saveUser(user);
-        rr.setResult(true);
+        if(userVO!=null) {
+            if(userService.getUserByName(userVO.getName())==null) {
+                try {
+                    userService.saveUser(userVO);
+                    rr.setResult(true);
+                } catch (Exception e) {
+                    rr.setMessage("Save fail!");
+                }
+            }else {
+                rr.setMessage("User name already exists!");
+            }
+        }
         return rr;
+    }
+
+    @PostMapping("/login")
+    public String login(String name, String password, HttpServletRequest request){
+        User user = userService.getUserByName(name);
+        if(user==null){
+            return "UserName dose not exist!";
+        }
+        if(password.equals(user.getPassword())){
+            request.getSession().setAttribute("userId",user.getId());
+            request.getSession().setAttribute("userName",name);
+            return "Success";
+        }else{
+            return "Password Wrong";
+        }
     }
 
 //    @GetMapping("/getAll")

@@ -1,23 +1,23 @@
-/* ÉèÖÃ±³¾°Í¼£¬×ÖÌåÉèÖÃÎªÎ¢ÈíÑÅºÚ */ 
-body{background:url(../images/psb1.jpg) no-repeat;background-size: 100% auto;
-		font-family: "Î¢ÈíÑÅºÚ", sans-serif;}
-/* ÒıÓÃÍ¼Æ¬¸ß¶ÈÉèÖÃÎª28px£¬¾ÍÊÇÒ³Ãæ×îÉÏ·½ÏñÎİéÜÒ»ÑùµÄºÚÉ«Í¼ */ 
-.headtop{background:url(topbg.jpg);height:28px;}
-/* Õû¸öµÇÂ¼¿òµÄcss£¬²¢Ê¹ÓÃ¾ø¶Ô¶¨Î»¾ÓÖĞ */ 
-.login { 
+/* è®¾ç½®èƒŒæ™¯å›¾ï¼Œå­—ä½“è®¾ç½®ä¸ºå¾®è½¯é›…é»‘ */
+body{background:url(../images/psb2.jpg) no-repeat;background-size: 100% auto;
+    font-family: "å¾®è½¯é›…é»‘", sans-serif;}
+/* å¼•ç”¨å›¾ç‰‡é«˜åº¦è®¾ç½®ä¸º28pxï¼Œå°±æ˜¯é¡µé¢æœ€ä¸Šæ–¹åƒå±‹æªä¸€æ ·çš„é»‘è‰²å›¾ */
+/*.headtop{background:url(../images/psb2.jpg);height:28px;}*/
+/* æ•´ä¸ªç™»å½•æ¡†çš„cssï¼Œå¹¶ä½¿ç”¨ç»å¯¹å®šä½å±…ä¸­ */
+.login {
     margin:50px auto;
     width:340px;
     height:300px;
 }
-.register {    
-	margin:50px auto;
+.register {
+    margin:50px auto;
     width:360px;
     height:300px;
 }
 table{ line-height: 40px;}
-/* Ç°Ãæ·ÖÎö¹ıµÄh1±êÇ©µÄcss£¬text-shadowÉèÖÃÒõÓ°Ê¹ÎÄ×Ö¸üºÃ¿´£¬letter-spacingÉèÖÃ×Ö·û¼ä¾à */ 
+/* å‰é¢åˆ†æè¿‡çš„h1æ ‡ç­¾çš„cssï¼Œtext-shadowè®¾ç½®é˜´å½±ä½¿æ–‡å­—æ›´å¥½çœ‹ï¼Œletter-spacingè®¾ç½®å­—ç¬¦é—´è· */
 h1 { color:#555555; text-shadow: 0px 10px 8px #CDC673; letter-spacing:2px;text-align:center;margin-bottom:20px; }
-/* Á½¸öÊäÈë¿òµÄcss£¬borderÊôĞÔÉèÖÃ±ß¿òÏß´ÖÏ¸ÒÔ¼°ÑÕÉ«£¬border-radiusÉèÖÃ±ß¿òµÄÔ²½Ç½Ç¶È */
+/* ä¸¤ä¸ªè¾“å…¥æ¡†çš„cssï¼Œborderå±æ€§è®¾ç½®è¾¹æ¡†çº¿ç²—ç»†ä»¥åŠé¢œè‰²ï¼Œborder-radiusè®¾ç½®è¾¹æ¡†çš„åœ†è§’è§’åº¦ */
 .input{
     padding:10px;
     width:100%;
@@ -32,7 +32,7 @@ h1 { color:#555555; text-shadow: 0px 10px 8px #CDC673; letter-spacing:2px;text-a
     border-radius:4px;
     letter-spacing:1px;
 }
-/* µÇÂ¼°´Å¥µÄcss£¬cursor:pointerµ±Êó±êÒÆµ½°´Å¥ÉÏÃæÊ±±ä³ÉĞ¡ÊÖĞÎ×´ */
+/* ç™»å½•æŒ‰é’®çš„cssï¼Œcursor:pointerå½“é¼ æ ‡ç§»åˆ°æŒ‰é’®ä¸Šé¢æ—¶å˜æˆå°æ‰‹å½¢çŠ¶ */
 .submit{
     width:30%;
     padding:8px;
@@ -43,11 +43,11 @@ h1 { color:#555555; text-shadow: 0px 10px 8px #CDC673; letter-spacing:2px;text-a
     background-size: 100% auto;
     border:1px solid black;
     border-radius:3px;
-    cursor:pointer; 
-}   
+    cursor:pointer;
+}
 .change{
     padding:5px;
     background-color:#ccffff;
     border-radius:4px;
-    cursor:pointer; 
+    cursor:pointer;
 } 

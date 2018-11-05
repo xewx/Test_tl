@@ -5,47 +5,47 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 	margin: auto;
 	margin-top: 10px;
 	padding-right: 15px;
-    padding-left: 15px;   
-    background-color: #f2f2f2;
-    border: 1px solid #999999;
-    border-radius:4px;
+	padding-left: 15px;
+	background-color: #f2f2f2;
+	border: 1px solid #999999;
+	border-radius:4px;
 }
 .row {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: auto;
-    background-color: #f2e5ff;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	background-color: #f2e5ff;
 }
 .title1{
 	float: left;
-    height: 50px;
-    padding: 10px 14px;
-    font-size: 22px;
-    font-weight:bold; text-shadow: 0px 10px 5px #CDC673;
+	height: 50px;
+	padding: 10px 14px;
+	font-size: 22px;
+	font-weight:bold; text-shadow: 0px 10px 5px #CDC673;
 }
 .title2{
 	float: left;
-    height: 50px;
-    padding: 15px 20px;
-    font-size: 18px;
+	height: 50px;
+	padding: 15px 20px;
+	font-size: 18px;
 }
 .sea{
 	float: left;
-    height: 50px;
-    padding-top: 11px;
-    padding-left: 100px;
+	height: 50px;
+	padding-top: 11px;
+	padding-left: 100px;
 }
 .login{
 	float: right;
-    height: 50px;
-    padding: 15px 0px;
-    font-size: 18px;
+	height: 50px;
+	padding: 15px 0px;
+	font-size: 18px;
 }
 .fcontrol {
 	height:26px;
 	margin: auto;
-    border: 1px solid #ccc;
-    border-radius:4px;
+	border: 1px solid #ccc;
+	border-radius:4px;
 	padding-left: 6px;
 }
 .bdefault {
@@ -53,40 +53,40 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 	width:60px;
 	margin: auto;
 	font-size: 13px;
-    border: 1px solid #ccc;
-    border-radius:4px;
-    background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius:4px;
+	background-color: #fff;
 }
-.main{		
-    margin: auto;
-    margin-top:30px;
-    width: 1030px;
-    height: auto;
+.main{
+	margin: auto;
+	margin-top:30px;
+	width: 1030px;
+	height: auto;
 }
-.mainleft{	
+.mainleft{
 	float:right;
 	margin: auto;
-    width: 750px;
+	width: 750px;
 }
-.mainright{	
+.mainright{
 	float:left;
-    margin: auto;
-    width: 250px;
+	margin: auto;
+	width: 250px;
 }
 .left1{
 	width: 750px;
-    border: 1px solid #ccc;
-    border-radius:4px;
+	border: 1px solid #ccc;
+	border-radius:4px;
 }
 .left2{
 	width: 250px;
-    border: 1px solid #ccc;
-    border-radius:4px;
+	border: 1px solid #ccc;
+	border-radius:4px;
 }
 .left1tit{
 	width: 730px;
-    height:40px;
-    padding-left: 20px;   
+	height:40px;
+	padding-left: 20px;
 	font-size: 16px;
 	line-height:40px;
 	background-color: #f2f2f2;
@@ -94,8 +94,8 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 }
 .left2tit{
 	width: 230px;
-    height:40px;
-    padding-left: 20px;   
+	height:40px;
+	padding-left: 20px;
 	font-size: 16px;
 	line-height:40px;
 	background-color: #f2f2f2;
@@ -103,29 +103,29 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 }
 .left1bod{
 	width: 700px;
-    height:50px;
-    margin:10px;
-    padding: 15px;   
+	height:50px;
+	margin:10px;
+	padding: 15px;
 	line-height:40px;
 	border: 1px solid #ccc;
-    border-radius:4px;
+	border-radius:4px;
 	border-radius:4px;
 }
 .left2bod{
 	width: 200px;
-    height:50px;
-    margin:10px;
-    padding: 15px;   
+	height:50px;
+	margin:10px;
+	padding: 15px;
 	line-height:40px;
 	border: 1px solid #ccc;
-    border-radius:4px;
+	border-radius:4px;
 	border-radius:4px;
 }
 .left1info{
 	width:100%;
 	line-height:30px;
 	height: 60%;
-	font-size:20px;	
+	font-size:20px;
 }
 .left1info2{
 	width:100%;
@@ -135,24 +135,24 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 }
 .left3per{
 	width: 200px;
-    height:15px;
-    padding: 5px; 
-    padding-left:15px;
+	height:15px;
+	padding: 5px;
+	padding-left:15px;
 	line-height:15px;
 }
 .left3bod{
 	width: 200px;
-    padding: 10px;   
+	padding: 10px;
 }
 .left4per{
-    height:40px;
-    padding: 5px; 
-    padding-left:10px;
+	height:40px;
+	padding: 5px;
+	padding-left:10px;
 	line-height:40px;
 }
 .left4bod{
 	width: 500px;
-    padding: 10px;
+	padding: 10px;
 }
 .left4bod td{
 	padding-bottom: 10px;
@@ -171,21 +171,21 @@ a{text-decoration:none;color:black;margin-left: 10px;}
 	width:40px;
 }
 .myreply{
-	width:15em;/*±£Ö¤ÎÄ×Ö²»»á±»°ëºº×Ö½Ø¶Ï,ÏÔÊ¾10¸öÎÄ×Ö*/  
-            overflow:hidden;/*³¬³ö³¤¶ÈµÄÎÄ×ÖÒş²Ø*/  
-            text-overflow:ellipsis;/*ÎÄ×ÖÒş²ØÒÔºóÌí¼ÓÊ¡ÂÔºÅ*/  
-            white-space:nowrap;/*Ç¿ÖÆ²»»»ĞĞ*/  
+	width:15em;/*ä¿è¯æ–‡å­—ä¸ä¼šè¢«åŠæ±‰å­—æˆªæ–­,æ˜¾ç¤º10ä¸ªæ–‡å­—*/
+	overflow:hidden;/*è¶…å‡ºé•¿åº¦çš„æ–‡å­—éšè—*/
+	text-overflow:ellipsis;/*æ–‡å­—éšè—ä»¥åæ·»åŠ çœç•¥å·*/
+	white-space:nowrap;/*å¼ºåˆ¶ä¸æ¢è¡Œ*/
 }
 .end{
 	height:80px;
 	width:1000px;
-	clear:both;	
+	clear:both;
 	margin:auto;
 	padding-right: 15px;
-    padding-left: 15px;   
-    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(white), to(#f2f2f2));/*¹È¸è*/
-    border-radius:4px;
-    text-align:center;
-    text-shadow: 0px 10px 5px #CDC673;
-    line-height: 80px;
+	padding-left: 15px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(white), to(#f2f2f2));/*è°·æ­Œ*/
+	border-radius:4px;
+	text-align:center;
+	text-shadow: 0px 10px 5px #CDC673;
+	line-height: 80px;
 }
